@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  padding-left: 2em;
+  padding-top: 0.5em;
+}
+
+header .logo {
+  width: 40px;
+}
+
+header .nav-menu {
+  padding-top: 1em;
+  display: flex;
+}
+
+header .nav-menu li {
+  padding-left: 2em;
+}
