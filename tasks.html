@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/tasks.css" />
+
+    <script src="./js/tasks.js"></script>
   </head>
   <body>
     <header>
@@ -20,5 +22,14 @@
         </ul>
       </nav>
     </header>
+
+    <h1>Tarefas do dia</h1>
+
+    <p>Coloque aqui as tarefas que você precisa cumprir hoje:</p>
+
+    <input type="text" id="taskInput" placeholder="Digite uma tarefa" />
+    <button onclick="addTask()" id="addTaskButton">Adicionar</button>
+
+    <ul id="taskList"></ul>
   </body>
 </html>

@@ -2,4 +2,27 @@ body {
   background-image: url(../assets/plano\ de\ fundo\ 2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 2.5em;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+input {
+  height: 2em;
+  width: 20em;
+  color: black;
+}
+
+button {
+  height: 2em;
 }
