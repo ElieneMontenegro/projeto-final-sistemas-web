@@ -8,8 +8,8 @@ function addTask() {
     task.className = "task";
 
     var deleteButton = document.createElement("span");
-    deleteButton.textContent = "x";
-    deleteButton.className = "delete-button";
+    deleteButton.textContent = " ";
+    deleteButton.className = "delete-button fa fa-trash";
 
     deleteButton.addEventListener("click", function () {
       task.parentNode.removeChild(task);
