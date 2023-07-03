@@ -1,20 +1,49 @@
 function addTask() {
-  var taskInput = document.getElementById("taskInput");
-  var taskList = document.getElementById("taskList");
+  let taskInput = document.getElementById("taskInput");
+  let taskList = document.getElementById("taskList");
 
   if (taskInput.value !== "") {
-    var task = document.createElement("li");
-    task.textContent = taskInput.value;
-    task.className = "task";
+    let task = document.createElement("li");
 
-    var deleteButton = document.createElement("span");
-    deleteButton.textContent = "x";
-    deleteButton.className = "delete-button";
+    let input = document.createElement("input");
+    input.type = "checkbox";
+    input.id = "checkmark";
+    input.className = "checkmark";
 
-    deleteButton.addEventListener("click", function () {
-      task.parentNode.removeChild(task);
+    let label = document.createElement("label");
+    label.htmlFor = "checkmark";
+    label.id = "text";
+    label.textContent = taskInput.value;
+
+    input.addEventListener("click", function () {
+      if (input.checked) {
+        const label = this.parentElement.children[1];
+
+        label.innerHTML = `<del>${label.textContent}</del>`;
+      } else {
+        const label = this.parentElement.children[1];
+
+        const removeS = label.textContent
+          .replace("<del>", "")
+          .replace("</del>", "");
+
+        label.innerHTML = removeS;
+      }
     });
 
+    let deleteButton = document.createElement("span");
+    deleteButton.className = "delete-button fa fa-trash";
+
+    deleteButton.addEventListener("click", function () {
+      const isConfirmed = confirm("Você quer mesmo deletar essa tarefa?");
+
+      if (isConfirmed) {
+        task.parentNode.removeChild(task);
+      }
+    });
+
+    task.appendChild(input);
+    task.appendChild(label);
     task.appendChild(deleteButton);
     taskList.appendChild(task);
 

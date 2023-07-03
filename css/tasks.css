@@ -17,7 +17,7 @@ p {
   padding-bottom: 1em;
 }
 
-input {
+.tasks-input {
   height: 2em;
   width: 20em;
   color: black;
@@ -25,4 +25,27 @@ input {
 
 button {
   height: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.taskList {
+  font-size: 1.2em;
+  margin-top: 0.8em;
+}
+
+.taskList li {
+  margin-top: 0.5em;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  background-color: #fff;
+  width: 1.15em;
+  height: 1.15em;
+}
+
+label {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
