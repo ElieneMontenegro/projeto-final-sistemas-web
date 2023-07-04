@@ -2,6 +2,7 @@ body {
   background-image: url(../assets/plano\ de\ fundo\ main.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  text-align: center;
 }
 
 h1 {
@@ -9,9 +10,6 @@ h1 {
   font-size: 2.5em;
   padding-bottom: 0.5em;
   padding-top: 10%;
-  margin: auto;
-  width: 50%;
-  text-align: center;
 }
 
 iframe {
@@ -44,7 +42,7 @@ input {
   font-size:13px;
   border:none;
   height:50px;
-  width: 95%;
+  width: 85%;
 }
 
 #searchImg {

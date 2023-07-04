@@ -5,11 +5,18 @@
     let text = document.getElementById('txtBusca').value
     text.replace(' ', '+')
     var url = 'https://www.google.com/search?q='+document.getElementById('txtBusca').value; // Obtenha o valor do campo de entrada
-  
+
     if (url.trim() !== '') {
       window.open(url, '_blank'); // Abra uma nova aba com a URL fornecida
     }
    }
+
+  function handleKeyDown(event) {
+    if (event.keyCode === 13) { // Enter key code is 13
+      event.preventDefault(); // Prevent the default form submission
+      document.getElementById("searchImg").click(); // Programmatically click the button
+    }
+}
   </script>
   <head>
     <meta charset="UTF-8" />
@@ -33,7 +40,7 @@
     </header>
     <h1>SEJA BEM VINDA, LILA</h1>
     <div id="divBusca">
-      <input type="text" name="search" id="txtBusca" placeholder="Buscar..."/>
+      <input type="text" name="search" id="txtBusca" placeholder="Buscar..." onkeydown="handleKeyDown(event)"/>
       <button onclick="searchOnGoogle()"><img src="./assets/search-icon.png" id="searchImg" alt="Buscar" /></button>
     </div>
     <iframe
