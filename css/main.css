@@ -2,4 +2,58 @@ body {
   background-image: url(../assets/plano\ de\ fundo\ main.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  text-align: center;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 2.5em;
+  padding-bottom: 0.5em;
+  padding-top: 10%;
+}
+
+iframe {
+  padding-bottom: 0.5em;
+  padding-top: 2em;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: 50%;
+  border: none;
+}
+
+#divBusca{
+  background-color:#ffffff;
+  border:solid 1px;
+  border-radius:25px;
+  height: 50px;
+  margin: auto;
+  width: 50%;
+}
+
+input {
+  float:left;
+  background-color:transparent;
+  padding-left:25px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-style:italic;
+  color: black;
+  font-size:13px;
+  border:none;
+  height:50px;
+  width: 85%;
+}
+
+#searchImg {
+  max-width: 30px;
+}
+
+button {
+  float: right;
+  padding-top: 7px;
+  padding-right:10px;
+  padding-bottom: 2px;
+  border: none;
+  background-color: transparent;
 }
