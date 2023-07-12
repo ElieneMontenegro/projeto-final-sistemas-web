@@ -50,9 +50,3 @@ progress {
 .button:hover {
   background-color: #0c7ddb;
 }
-
-.waterLiter {
-  margin: 0 10px;  
-  cursor: pointer;
-  transform: scale(1.4);
-}
