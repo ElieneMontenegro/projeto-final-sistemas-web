@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMC</title>
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/imc.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./assets/logo.png" alt="" />
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="./main.html">Início</a></li>
+        <li><a href="./health.html">Saúde</a></li>
+        <li><a href="./tasks.html">Tarefas do dia</a></li>
+        <li><a href="./imc.html">IMC</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="one">
+      <h2 class="title">Entre com seu peso e altura</span></h2>
+      <div class="row">
+        <!-- Weight -->
+        <div class="group">
+          <input type="text" id="number1" placeholder="Peso (Em Kg)" onkeyup="imc()"/>
+        </div>
+
+        <!-- Height -->
+        <div class="group">
+          <input type="text" id="number2" placeholder="Altura (Em cm)" onkeyup="imc()"/>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="group">
+          <input type="text" id="result" name="result" placeholder="Seu IMC é" onkeyup="imc()" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Table with levels of IMC-->
+    <section class="two">
+      <h1><span class="title">Indicador de Nível de IMC</span></h1>
+      <table class="table">
+        <tr>
+          <th>Categoria</th>
+          <th>De</th>
+          <th>Até</th>
+        </tr>
+    
+        <tr class="level1">
+          <td>Muito abaixo do peso</td>
+          <td>-</td>
+          <td>15.0</td>
+        </tr>
+    
+        <tr class="level2">
+          <td>Severamente abaixo do peso</td>
+          <td>15</td>
+          <td>16</td>
+        </tr>
+    
+        <tr class="level3">
+          <td>Abaixo do peso</td>
+          <td>16</td>
+          <td>18.5</td>
+        </tr>
+    
+        <tr class="level4">
+          <td>Normal (peso saudável)</td>
+          <td>18.5</td>
+          <td>25</td>
+        </tr>
+    
+        <tr class="level5">
+          <td>Acima do peso</td>
+          <td>25</td>
+          <td>30</td>
+        </tr>
+    
+        <tr class="level6">
+          <td>Obeso Classe I (Moderadamente obeso)</td>
+          <td>30</td>
+          <td>35</td>
+        </tr>
+    
+        <tr class="level7">
+          <td>Obeso Classe II (Severamente obeso)</td>
+          <td>35</td>
+          <td>40</td>
+        </tr>
+    
+        <tr class="level8">
+          <td>Obeso Classe III (Muito severamente obeso)</td>
+          <td>40</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </section>
+    
+  </main>
+  <script src="./js/imc.js"></script>
+</body>
+
+</html>
