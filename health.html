@@ -28,24 +28,19 @@
       Beber água protege nossos órgãos vitais e os ajuda a absorver melhor os nutrientes, ajuda nosso metabolismo e hidrata nossas articulações e células.
     </p><br>
 
-    <div class="message">Qual a quantidade de aguá que você bebeu hoje?</div>
+    <div class="message">Qual a quantidade de água que você bebeu hoje?</div>
     <div>
       <progress id="progress-bar" value="0" min="0.5" max="2.5"></progress>
     </div><br><br>
+    <div class="optionsBOX">
+      <input type="checkbox" value="0.5" onchange="updateProgressBar()">0.5 L
+      <input type="checkbox" value="0.5" onchange="updateProgressBar()">1 L
+      <input type="checkbox" value="0.5" onchange="updateProgressBar()">1.5 L
+      <input type="checkbox" value="0.5" onchange="updateProgressBar()">2 L
+      <input type="checkbox" value="0.5" onchange="updateProgressBar()">2.5 L
+    </div><br>
 
-    <div>
-      <select class="button">
-        <option onclick="zerarBarra()" selected>selecione</option>
-        <option onclick="l05()">0,5 L</option>
-        <option onclick="l10()">1 L</option>
-        <option onclick="l15()">1,5 L</option>
-        <option onclick="l20()">2 L</option>
-        <option onclick="l25()">2,5 L </option>
-      </select>
-    </div><br><br>
-
-
-    <div class="options">
+    <div class="optionsYN">
       <div class="message">Você vai fazer exercício hoje?</div>
       <button class="button" onclick="yesBotton()">Sim</button>
       <button class="button" onclick="noBotton()">Não</button>
